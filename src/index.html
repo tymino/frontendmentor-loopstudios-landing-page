@@ -14,22 +14,26 @@
 </head>
 <body>
   <header id="header" class="header">
-    <!-- <img class="header__back-img--desktop" src="<%= require('./images/desktop/image-hero.jpg').default %>"> -->
-    <!-- <img class="header__back-img--mobile" src="<%= require('./images/mobile/image-hero.jpg').default %>"> -->
+    <img class="header__back-img header__back-img--desktop" src="<%= require('./images/desktop/image-hero.jpg').default %>">
+    <img class="header__back-img header__back-img--mobile" src="<%= require('./images/mobile/image-hero.jpg').default %>">
 
+    <div class="header__logo"><img src="<%= require('./images/logo.svg').default %>" alt="logo loopstudios"></div>
+    <nav class="header__navmenu">
+      <ul class="header__ul">
+        <li class="header__list">About</li>
+        <li class="header__list">Careers</li>
+        <li class="header__list">Events</li>
+        <li class="header__list">Products</li>
+        <li class="header__list">Support</li>
+      </ul>
+    </nav>
+    <div class="header__tagline">Immersive experiences that deliver</div>
   </header>
 
   <main id="main"></main>
 
   <footer id="footer"></footer>
 
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  Immersive experiences that deliver
 
   The leader in interactive VR
 
