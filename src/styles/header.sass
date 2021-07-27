@@ -1,3 +1,9 @@
+// Local var
+$paddingSides: 11.5%
+$paddingTop: 4%
+$paddingBottom: 9%
+
+
 .header
   position: relative
 
@@ -8,26 +14,63 @@
     &--mobile
       display: none
 
-  &__logo
+  &__wrapper
     position: absolute
     top: 0
     left: 0
 
-  &__navmenu
-    position: absolute
-    top: 0
-    right: 0
+    width: 100%
+    height: 100%
 
+    display: grid
+    grid-template-columns: repeat(2, auto)
+    grid-auto-rows: repeat(2, auto)
+
+    box-sizing: border-box
+
+    padding-top: $paddingTop
+    padding-right: $paddingSides 
+    padding-left: $paddingSides 
+    padding-bottom: $paddingBottom
+
+  &__logo
+
+  &__navmenu
     color: $colorWhite
 
   &__ul
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+    width: 100%
+
   &__list
 
   &__tagline
-    position: absolute
-    bottom: 0
-    left: 0
+    place-self: flex-end flex-start
 
-    border: 1px solid $colorWhite
+    max-width: 566px
+    padding: 40px
 
     color: $colorWhite
+    text-transform: uppercase
+    font-family: $fontJosefin
+    font-weight: 300
+    font-size: 70px
+    border: 2px solid $colorWhite
+
+
+
+@media ( max-width: 1240px )
+  .header__tagline
+    max-width: 400px
+    padding: 30px
+    font-size: 50px
+  
+@media ( max-width: 1024px )
+  .header__tagline
+    max-width: 280px
+    padding: 20px
+    font-size: 36px
+  
