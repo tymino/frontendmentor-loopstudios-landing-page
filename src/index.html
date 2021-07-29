@@ -20,23 +20,38 @@
     <div class="header__wrapper">
       <div class="header__logo"><img src="<%= require('./images/logo.svg').default %>" alt="logo loopstudios"></div>
       <nav class="header__navmenu">
-        <div class="header__hamburger hamburger-menu">
+        <div class="header__menu menu">
           <input id="menu__toggle" type="checkbox" />
           <label class="menu__btn" for="menu__toggle"><span></span></label>
           <ul class="menu__box">
-            <li><a class="menu__item" href="#">Главная</a></li>
-            <li><a class="menu__item" href="#">Проекты</a></li>
-            <li><a class="menu__item" href="#">Команда</a></li>
-            <li><a class="menu__item" href="#">Блог</a></li>
-            <li><a class="menu__item" href="#">Контакты</a></li>
+            <li><a class="menu__item" href="#">About</a></li>
+            <li><a class="menu__item" href="#">Careers</a></li>
+            <li><a class="menu__item" href="#">Events</a></li>
+            <li><a class="menu__item" href="#">Products</a></li>
+            <li><a class="menu__item" href="#">Support</a></li>
           </ul>
         </div>
         <ul class="header__ul">
-          <li class="header__list">About <span class="header__list--hover"></span></li>
-          <li class="header__list">Careers <span class="header__list--hover"></span></li>
-          <li class="header__list">Events <span class="header__list--hover"></span></li>
-          <li class="header__list">Products <span class="header__list--hover"></span></li>
-          <li class="header__list">Support <span class="header__list--hover"></span></li>
+          <li class="header__list">
+            <a class="header__list-item" href="#">About</a>
+            <span class="header__list--hover"></span>
+          </li>
+          <li class="header__list">
+            <a class="header__list-item" href="#">Careers</a>
+            <span class="header__list--hover"></span>
+          </li>
+          <li class="header__list">
+            <a class="header__list-item" href="#">Events</a>
+            <span class="header__list--hover"></span>
+          </li>
+          <li class="header__list">
+            <a class="header__list-item" href="#">Products</a>
+            <span class="header__list--hover"></span>
+          </li>
+          <li class="header__list">
+            <a class="header__list-item" href="#">Support</a>
+            <span class="header__list--hover"></span>
+          </li>
         </ul>
       </nav>
       <div class="header__tagline">Immersive experiences that deliver</div>
