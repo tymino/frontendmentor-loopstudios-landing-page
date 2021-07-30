@@ -1,0 +1,54 @@
+#main
+  display: flex
+  flex-direction: column
+
+  max-width: 1120px
+  margin: 0 auto
+
+  padding: 8% 20px 0px
+
+.interactive
+  display: grid
+  grid-template-columns: 570fr 160fr 390fr
+  grid-template-rows: 180fr 320fr
+
+  box-sizing: border-box
+
+  &__img
+    width: 100%
+    height: auto
+
+    grid-column-start: 1
+    grid-column-end: 3
+    grid-row-start: 1
+    grid-row-end: 3
+
+    z-index: 1
+
+  &__container
+    grid-column-start: 2
+    grid-column-end: 4
+    grid-row-start: 2
+    grid-row-end: 3
+
+    
+
+    padding-top: 96px
+    padding-left: 96px
+
+    box-sizing: border-box
+
+    background-color: $colorWhite
+
+    z-index: 3
+
+  &__header
+    text-transform: uppercase
+    font-family: $fontJosefin
+    font-weight: 300
+    font-size: 3.2rem
+    
+  &__body
+    position: relative
+    margin-top: 36px
+    color: $colorDarkGray
