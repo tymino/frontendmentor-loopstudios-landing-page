@@ -75,7 +75,7 @@
     <section class="creations">
       <h2 class="creations__header">Our creations</h2>
       <a class="creations__btn-link">See all</a>
-      
+
       <div class="creations__grid">
         <div class="creations__card-wrapper card">
           <a class="card__link" href="#">
@@ -138,29 +138,71 @@
     </section>
   </main>
 
-  <footer id="footer"></footer>
+  <footer id="footer" class="footer">
+    <img class="footer__logo" src="<%= require('./images/logo.svg').default %>" alt="logo loopstudios footer">
 
+    <nav class="footer__navmenu navmenu">
+      <ul class="navmenu__ul">
+        <li class="navmenu__list">
+          <a class="navmenu__link" href="#">About</a>
+          <span class="navmenu__link--hover"></span>
+        </li>
+        <li class="navmenu__list">
+          <a class="navmenu__link" href="#">Careers</a>
+          <span class="navmenu__link--hover"></span>
+        </li>
+        <li class="navmenu__list">
+          <a class="navmenu__link" href="#">Events</a>
+          <span class="navmenu__link--hover"></span>
+        </li>
+        <li class="navmenu__list">
+          <a class="navmenu__link" href="#">Products</a>
+          <span class="navmenu__link--hover"></span>
+        </li>
+        <li class="navmenu__list">
+          <a class="navmenu__link" href="#">Support</a>
+          <span class="navmenu__link--hover"></span>
+        </li>
+      </ul>
+    </nav>
 
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
+    <div class="footer__social social">
+      <ul class="social__ul">
+        <li class="social__list">
+          <a class="social__link" href="#">
+            <img class="social__icon" src="<%= require('./images/icon-facebook.svg').default %>" alt="icon-facebook">
+          </a>
+          <span class="social__link--hover"></span>
+        </li>
+        <li class="social__list">
+          <a class="social__link" href="#">
+            <img class="social__icon" src="<%= require('./images/icon-twitter.svg').default %>" alt="icon-twitter">
+          </a>
+          <span class="social__link--hover"></span>
+        </li>
+        <li class="social__list">
+          <a class="social__link" href="#">
+            <img class="social__icon" src="<%= require('./images/icon-pinterest.svg').default %>" alt="icon-pinterest">
+          </a>
+          <span class="social__link--hover"></span>
+        </li>
+        <li class="social__list">
+          <a class="social__link" href="#">
+            <img class="social__icon" src="<%= require('./images/icon-instagram.svg').default %>" alt="icon-instagram">
+          </a>
+          <span class="social__link--hover"></span>
+        </li>
+      </ul>
+    </div>
 
-  About
-  Careers
-  Events
-  Products
-  Support
+    <p class="footer__copyright">
+      © 2021 Loopstudios. All rights reserved.
+    </p>
+  </footer>
 
-  © 2021 Loopstudios. All rights reserved.
-
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw/hub/loopstudios-landing-page-T_7R-NdZk" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/tymino/frontendmentor-loopstudios-landing-page" target="_blank">tymino</a>.
-  </div>
+  </div> -->
 </body>
 </html>
