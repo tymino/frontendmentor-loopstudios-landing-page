@@ -18,8 +18,4 @@
 
 /node_modules
 
-#develop
-/design
-README-template.md
-README.md
-style-guide.md
+/dist
