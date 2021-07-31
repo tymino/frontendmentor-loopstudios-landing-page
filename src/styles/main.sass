@@ -47,7 +47,6 @@
     text-transform: uppercase
     
   &__body
-    position: relative
     margin-top: 32px
     color: $colorDarkGray
     font-size: 1vw
@@ -61,6 +60,7 @@
   .interactive
     display: grid
     grid-template-columns: 1fr
+    grid-template-rows: auto
 
     &__img
       width: 100%
@@ -87,7 +87,148 @@
       text-transform: uppercase
       
     &__body
-      position: relative
+      // position: relative
       margin-top: 32px
       color: $colorDarkGray
       font-size: 1rem
+
+
+
+
+// Section 2
+.creations
+  display: grid
+  grid-template-columns: 5fr 2fr
+  grid-template-rows: auto 1fr
+
+  max-width: 1200px
+
+  margin-top: 10%
+
+  &__header
+    grid-column-start: 1
+    grid-column-end: 2
+    grid-row-start: 1
+    grid-row-end: 2
+
+    justify-self: flex-start
+    align-self: flex-start
+
+    font-family: $fontJosefin
+    font-weight: 300
+    font-size: 3.15rem
+    text-transform: uppercase
+
+  &__btn-link
+    grid-column-start: 2
+    grid-column-end: 3
+    grid-row-start: 1
+    grid-row-end: 2
+
+    justify-self: flex-end
+    align-self: flex-start
+
+    padding: 8px 34px
+
+    border: 2px solid $colorDarkGray
+    border-radius: 2px
+
+    font-weight: 400
+    font-size: 1rem
+    text-transform: uppercase
+    letter-spacing: 4px
+
+  &__grid
+    grid-column-start: 1
+    grid-column-end: 3
+    grid-row-start: 2
+    grid-row-end: 3
+
+    display: grid
+    grid-template-columns: repeat(auto-fill, 256px)
+    row-gap: 14px
+    justify-content: space-between
+
+    margin-top: 4%
+
+.card
+  &__link
+    position: relative
+    display: block
+
+  &__header
+    position: absolute
+    left: 0px
+    bottom: 0px
+
+    padding: 0px 40px 34px
+
+    color: $colorWhite
+    font-family: $fontJosefin
+    font-weight: 300
+    font-size: 2rem
+    text-transform: uppercase
+
+    text-shadow: 1px 2px 1px $colorBlack
+
+    z-index: 2
+
+  &__img
+    &--desktop
+      display: block
+    &--mobile
+      display: none
+
+
+@media ( max-width: 768px )
+  .creations
+    grid-template-columns: 1fr
+    grid-template-rows: auto 1fr 90px
+
+    &__header
+      grid-column-start: 1
+      grid-column-end: 2
+      grid-row-start: 1
+      grid-row-end: 2
+
+      justify-self: center
+
+      font-size: 7vw
+
+    &__btn-link
+      grid-column-start: 1
+      grid-column-end: 2
+      grid-row-start: 3
+      grid-row-end: 4
+
+      justify-self: center
+      align-self: flex-end
+
+    
+    &__grid
+      grid-column-start: 1
+      grid-column-end: 2
+      grid-row-start: 2
+      grid-row-end: 3
+
+      display: grid
+      grid-template-columns: auto
+      row-gap: 14px
+      justify-content: space-between
+
+  .card
+    &__link
+    &__header
+      max-width: 200px
+      padding: 0px 6% 4%
+
+      font-size: 5vw
+
+    &__img
+      &--desktop
+        display: none
+
+      &--mobile
+        width: 100%
+        height: auto
+        display: block
