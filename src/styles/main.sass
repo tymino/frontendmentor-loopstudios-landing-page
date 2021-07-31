@@ -138,6 +138,15 @@
     text-transform: uppercase
     letter-spacing: 4px
 
+    cursor: pointer
+
+    transition: border 0.5s ease, background 0.9s ease, color 1.2s ease
+
+    &:hover
+      border: 2px solid $colorBlack
+      color: $colorWhite
+      background: $colorBlack
+
   &__grid
     grid-column-start: 1
     grid-column-end: 3
@@ -152,6 +161,9 @@
     margin-top: 4%
 
 .card
+  &:hover
+    filter: opacity(70%)
+
   &__link
     position: relative
     display: block
