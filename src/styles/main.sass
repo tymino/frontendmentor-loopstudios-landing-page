@@ -51,3 +51,45 @@
     margin-top: 32px
     color: $colorDarkGray
     font-size: 1vw
+
+
+
+@media ( max-width: 768px )
+  #main
+    padding-left: 20px
+    padding-right: 20px
+
+  .interactive
+    display: grid
+    grid-template-columns: 1fr
+    // grid-template-rows: auto
+
+    &__img
+      width: 100%
+
+      grid-column-start: 1
+      grid-column-end: 2
+      grid-row-start: 1
+      grid-row-end: 2
+
+    &__container
+      grid-column-start: 1
+      grid-column-end: 2
+      grid-row-start: 2
+      grid-row-end: 3
+
+      padding: 30px 6%
+
+      text-align: center
+
+    &__header
+      font-family: $fontJosefin
+      font-weight: 300
+      font-size: 2.1rem
+      text-transform: uppercase
+      
+    &__body
+      position: relative
+      margin-top: 32px
+      color: $colorDarkGray
+      font-size: 1rem
