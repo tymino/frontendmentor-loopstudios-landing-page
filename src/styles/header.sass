@@ -67,7 +67,7 @@
       border-bottom: 2px solid $colorWhite
       
       opacity: 0
-      transition: opacity 450ms linear
+      transition: opacity 300ms linear
 
     &:hover
       & .header__list--hover
@@ -89,7 +89,7 @@
     font-family: $fontJosefin
     font-weight: 300
     font-size: 4.95vw
-  
+
 
 @media ( max-width: 768px )
   .header
@@ -104,7 +104,6 @@
 
     &__logo
       z-index: 6
-
 
     &__navmenu
       margin-right: 10px
@@ -125,7 +124,7 @@
       margin: 0 20px
       font-size: 11vw
 
-  
+
   #menu__toggle
     opacity: 0
 
@@ -138,12 +137,10 @@
     transform: rotate(0)
     z-index: 6
 
-
   #menu__toggle:checked ~ .menu__btn > span::after
     top: 0
     transform: rotate(90deg)
     z-index: 6
-
 
   #menu__toggle:checked ~ .menu__box
     visibility: visible
@@ -159,7 +156,6 @@
 
     cursor: pointer
     z-index: 6
-
 
   .menu__btn > span,
   .menu__btn > span::before,
@@ -178,7 +174,6 @@
   .menu__btn > span::before
     content: ''
     top: -8px
-
 
   .menu__btn > span::after
     content: ''
@@ -211,10 +206,8 @@
 
     background-color: $colorBlack
 
-    transition-duration: .25s
-
     cursor: pointer
-
+    transition-duration: .25s
     z-index: 5
 
 
